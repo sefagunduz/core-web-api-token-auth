@@ -10,6 +10,7 @@ PM> Install-Package System.IdentityModel.Tokens.Jwt
 
 add appsettings json
 
+```json
 {
   "JWT": {
     "Key": "MySuperSecretKey@345",
@@ -17,8 +18,9 @@ add appsettings json
     "Audience": "https://localhost:7069/"
   }
 }
+```
 
-0- add Program.cs
+add Program.cs
 
 ```cs
 /* First UseAuthentication, Second UseAuthorization */
