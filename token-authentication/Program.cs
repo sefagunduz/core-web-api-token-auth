@@ -15,13 +15,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddAuthentication(x =>
 {
-    //x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 }).AddJwtBearer(options =>
 {
-    //options.SaveToken = true;
-    //options.RequireHttpsMetadata = false;
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuer = true,

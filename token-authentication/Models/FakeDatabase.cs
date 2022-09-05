@@ -28,5 +28,10 @@
             users.Remove(oldUser);
             users.Add(user);
         }
+
+        public static List<User> GetUsers()
+        {
+            return users;
+        }
     }
 }

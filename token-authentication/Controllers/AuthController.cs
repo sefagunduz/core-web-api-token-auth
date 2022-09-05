@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using token_authentication.Models;
@@ -100,9 +99,9 @@ namespace token_authentication.Controllers
         }
 
         [HttpGet, Authorize, Route("Test")]
-        public IActionResult Test()
+        public List<User> Test()
         {
-            return Ok("You are logged in.");
+            return FakeDatabase.GetUsers();
         }
 
     }
