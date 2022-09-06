@@ -2,9 +2,11 @@
 
 ## dependencies
 
+```
 PM> Install-Package Microsoft.AspNetCore.Authentication.JwtBearer
 PM> Install-Package Microsoft.IdentityModel.Tokens
 PM> Install-Package System.IdentityModel.Tokens.Jwt
+```
 
 ## step by step
 
